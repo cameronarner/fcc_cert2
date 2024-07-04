@@ -1,4 +1,6 @@
-# React + Vite
+# Markdown Previewer
+
+This is my markdown previewer, created as #2 out of five for my freecodecamp front end web development libraries certification. 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
