@@ -6,8 +6,8 @@ class MarkdownPreviewer extends Component{
   constructor(props){
     super(props);
     this.state = {
-      input: "",
-      md: ""
+      input: "# Welcome to Markdown Previewer!\n## Edit the text in the editor to see it rendered as HTML here :)",
+      md: marked.parse("# Welcome to Markdown Previewer!\n## Edit the text in the editor to see it rendered as HTML here :)")
     };
   }
   handleChange(event){
@@ -19,8 +19,7 @@ class MarkdownPreviewer extends Component{
       <div>
         <div id="editorDiv">
           <h1 className="title">Editor</h1>
-        <textarea id={"editor"} onChange={this.handleChange.bind(this)}># Welcome to Markdown Previewer!
-## Edit the text in the editor to see it rendered as HTML here :)</textarea>
+        <textarea id={"editor"} onChange={this.handleChange.bind(this)} value={this.state.input}></textarea>
         </div>
         <div id="previewDiv">
           <h1 className="title">Previewer</h1>

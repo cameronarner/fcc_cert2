@@ -4,14 +4,17 @@
   --color3: #192294;
   --color4: #000278; 
 }
-*{
-  background-color: var(--color1);
+
+.App, body, html{
+  background-color: var(--color4);
 }
+
 
 #preview{
   width: 90%;
   margin: auto;
   border-radius: 10px;
+  background-color: var(--color1);
 }
 
 #editor{
@@ -38,7 +41,7 @@
 #editorDiv {
   border: 2px solid var(--color4);
   margin: auto;
-  width: 42%;
+  width: 55%;
   border-radius: 10px;
   margin-top: 15px;
   background-color: var(--color2);
@@ -48,7 +51,7 @@
 #previewDiv{
   border: 2px solid var(--color4);
   margin: auto;
-  width: 60%;
+  width: 70%;
   border-radius: 10px;
   background-color: var(--color2);
 }
